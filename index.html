@@ -559,15 +559,24 @@ dialog .toast{bottom:calc(14px + env(safe-area-inset-bottom,0px))}
 .xw-wide .xws li{background:transparent;color:var(--sheet)}
 /* شبكة صور الأعمال: مربعات متساوية، والصف الأخير دائمًا ممتلئ */
 .xwx{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:32px 0 8px}
-.xwx .xwm{aspect-ratio:1;border-radius:14px;border:1px solid var(--line);background:var(--soft)}
-.xwx .xwm img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;transition:scale .5s cubic-bezier(.2,.8,.2,1)}
+.xwx .xwm{position:relative;aspect-ratio:1;border-radius:14px;border:1px solid var(--line);background:var(--soft)}
+.xwx .xwm img{position:relative;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;transition:scale .5s cubic-bezier(.2,.8,.2,1)}
+.xwx .xwbl{display:none}
+/* الصورة الممدودة في الصف الأخير: تظهر كاملة بدون قص، ونسخة مموّهة منها تملأ الجوانب */
 .xwx .xwm:last-child:nth-child(odd){grid-column:1/-1;aspect-ratio:2/1}
-@media(hover:hover){.xwx .xwm:hover img{scale:1.05}}
+.xwx .xwm:last-child:nth-child(odd) .xwbl{display:block}
+.xwx .xwm:last-child:nth-child(odd) img:not(.xwbl){object-fit:contain}
+.xwx .xwbl{position:absolute;inset:0;filter:blur(20px) brightness(.65);scale:1.2}
+@media(hover:hover){.xwx .xwm:hover img:not(.xwbl){scale:1.05}}
 @media(min-width:700px){
   .xwx{grid-template-columns:repeat(3,1fr);gap:14px}
   .xwx .xwm:last-child:nth-child(odd){grid-column:auto;aspect-ratio:1}
+  .xwx .xwm:last-child:nth-child(odd) .xwbl{display:none}
+  .xwx .xwm:last-child:nth-child(odd) img:not(.xwbl){object-fit:cover}
   .xwx .xwm:last-child:nth-child(3n+2){grid-column:span 2;aspect-ratio:auto}
   .xwx .xwm:last-child:nth-child(3n+1){grid-column:1/-1;aspect-ratio:3/1}
+  .xwx .xwm:last-child:is(:nth-child(3n+1),:nth-child(3n+2)) .xwbl{display:block}
+  .xwx .xwm:last-child:is(:nth-child(3n+1),:nth-child(3n+2)) img:not(.xwbl){object-fit:contain}
 }
 .xwo{width:100vw;margin-inline:calc(50% - 50vw);min-height:56svh;display:grid;place-content:center;justify-items:center;gap:20px;padding:56px 22px;text-align:center}
 .xwo h2{font:800 clamp(22px,6.2vw,34px)/1.5 var(--fh);max-width:22ch;text-wrap:balance}
@@ -1387,7 +1396,7 @@ async function renderWork(){
       : med(sc.m[0], "xwf", sc.l === "wide" ? "zoom" : side);
     return `<section class="xw xw-${sc.l}${n % 2 ? " alt" : ""}" style="--k:var(--${sc.k})">${m}${txt(sc, n)}</section>`; }).join("");
   const rest = imgs.map((g, n) => n).filter(n => !used.has(n));
-  if (rest.length) html += `<div class="xwx">${rest.map(n => `<button class="xwm" data-wk="${n}"><img src="${esc(imgs[n].src)}" alt="" loading="lazy"></button>`).join("")}</div>`;
+  if (rest.length) html += `<div class="xwx">${rest.map(n => `<button class="xwm" data-wk="${n}"><img class="xwbl" src="${esc(imgs[n].src)}" alt="" aria-hidden="true" loading="lazy"><img src="${esc(imgs[n].src)}" alt="" loading="lazy"></button>`).join("")}</div>`;
   html += `<section class="xwo"><h2 class="rv" data-d="up">${esc(SHOWO[li])}</h2><a class="btn wa rv" data-d="pop" target="_blank" rel="noopener" href="https://wa.me/${SHOP.whatsapp}">${x.wa}</a></section>`;
   const gal = $("#gal"); gal.innerHTML = html;
   gal.onclick = e => { const b = e.target.closest("[data-wk]"); if (!b) return; const g = imgs[+b.dataset.wk];
