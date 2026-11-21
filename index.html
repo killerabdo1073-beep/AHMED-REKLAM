@@ -1127,7 +1127,8 @@ function row(c, it){
   if (ask) ctl = `<a class="opt wa" href="${esc(waLink(x.askMsg + " " + nm(it.name)))}" target="_blank" rel="noopener">${I.wa}<span>${x.askB}</span></a>`;
   else if (it.widths) ctl = `<button class="opt" data-open="${it.id}">${bdg}<span>${it.widths.length} ${x.szs}</span>${I.down}</button>`;
   else if (it.colors) { const ps = it.colors.map((z, i) => cp(it, i)), mn = Math.min(...ps);
-    if (ps.some(p => p !== mn)) price = `<div class="pr"><small>${x.from}</small><span class="num">${money(mn)}</span></div>`;
+    // السعر على البطاقة يتبع أسعار الألوان: نفس السعر لكلها → يظهر هو، أسعار مختلفة → «ابتداءً من» أرخصها
+    price = ps.some(p => p !== mn) ? `<div class="pr"><small>${x.from}</small><span class="num">${money(mn)}</span></div>` : `<div class="pr num">${money(mn)}</div>`;
     ctl = `<button class="opt" data-open="${it.id}">${bdg}<span>${it.colors.length} ${x.cls}</span>${I.down}</button>`; }
   else ctl = `<div data-slot="${it.id}:-1">${stepper(it.id + ":-1")}</div>`;
   if (it.off) ctl = `<span class="na">${x.na}</span>`;
