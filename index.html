@@ -12,20 +12,25 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ahmed Reklam">
 <meta property="og:title" content="Ahmed Reklam | قائمة أسعار مواد الطباعة والإعلان">
-<meta property="og:description" content="فليكس، لواصق، بلاستك، فووم، إضاءة وأحبار. شوف الأسعار واطلب مباشرة عبر واتساب.">
+<meta property="og:description" content="فليكس، لواصق، بلاستك، فووم، إضاءة وأحبار. تصفّح الأسعار واطلب مباشرة عبر واتساب.">
 <meta property="og:locale" content="ar_IQ">
 <meta property="og:locale:alternate" content="kmr_IQ">
+<!-- رابط الموقع: إذا تغيّر العنوان، غيّر الروابط الأربعة هنا وبالـ JSON-LD تحت -->
+<meta property="og:url" content="https://killerabdo1073-beep.github.io/AHMED-REKLAM/">
+<meta property="og:image" content="https://killerabdo1073-beep.github.io/AHMED-REKLAM/og.png">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<!-- بعد رفع الموقع: ارفع صورة (1200×630) وحط رابطها الكامل هنا وشيل علامات التعليق
-<meta property="og:image" content="https://killerabdo1073-beep.github.io/AHMED-REKLAM/og.png">
-<meta property="og:url" content="https://killerabdo1073-beep.github.io/AHMED-REKLAM/">
+<meta property="og:image:alt" content="Ahmed Reklam — قائمة أسعار مواد الطباعة والإعلان">
 <meta name="twitter:image" content="https://killerabdo1073-beep.github.io/AHMED-REKLAM/og.png">
 <link rel="canonical" href="https://killerabdo1073-beep.github.io/AHMED-REKLAM/">
--->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-title" content="Ahmed Reklam">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-156 -156 312 312'%3E%3Cg fill='none' stroke-width='40' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='-72,-130 0,-58 72,-130' stroke='%23e4000f'/%3E%3Cpolyline points='-130,-72 -58,0 -130,72' stroke='%230090d0'/%3E%3Cpolyline points='130,-72 58,0 130,72' stroke='%23fde01b'/%3E%3Cpolyline points='-72,130 0,58 72,130' stroke='%23f08000'/%3E%3C/g%3E%3C/svg%3E">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Store","name":"Ahmed Reklam","telephone":"+9647505306676","description":"مواد الطباعة والإعلان: فليكس، لواصق، بلاستك، فووم، إضاءة، أحبار","priceRange":"$","currenciesAccepted":"USD, IQD"}
+{"@context":"https://schema.org","@type":"Store","name":"Ahmed Reklam","url":"https://killerabdo1073-beep.github.io/AHMED-REKLAM/","logo":"https://killerabdo1073-beep.github.io/AHMED-REKLAM/icon-512.png","image":"https://killerabdo1073-beep.github.io/AHMED-REKLAM/og.png","telephone":"+9647505306676","description":"مواد الطباعة والإعلان: فليكس، لواصق، بلاستك، فووم، إضاءة، أحبار","priceRange":"$","currenciesAccepted":"USD, IQD"}
 </script>
 <script>
 try{var th=localStorage.getItem("th");if(th==="dark"||th==="light")document.documentElement.dataset.theme=th}catch(e){}
@@ -85,7 +90,7 @@ try{var th=localStorage.getItem("th");if(th==="dark"||th==="light")document.docu
 #v-prices{overflow-x:clip}
 .hero{position:relative;isolation:isolate}
 #mk{position:relative}
-.echo{position:absolute;left:50%;top:50%;z-index:-1;width:min(300vw,1500px);aspect-ratio:1;transform:translate(-50%,-50%);pointer-events:none}
+.echo{position:absolute;left:50%;top:50%;z-index:-1;width:calc(var(--mw,230px) * 6.5);aspect-ratio:1;transform:translate(-50%,-50%);pointer-events:none}
 .echo svg{display:block;width:100%;height:100%;overflow:visible}
 .echo polyline{fill:none;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
 .echo .e1{stroke-width:2.5;opacity:.45}
@@ -121,7 +126,7 @@ try{var th=localStorage.getItem("th");if(th==="dark"||th==="light")document.docu
   -webkit-mask-image:var(--pat,var(--p-red)),radial-gradient(120% 95% at 0 100%,#000 0,transparent 66%);mask-image:var(--pat,var(--p-red)),radial-gradient(120% 95% at 0 100%,#000 0,transparent 66%);
   -webkit-mask-composite:source-in;mask-composite:intersect}
 /* شريط التحكم بالألوان (مثل اللي ينطبع على حافة ورق المطبعة) بأسفل كل قسم */
-.strip{display:flex;align-items:center;gap:3px;padding:7px 12px;border-top:1px solid var(--line);background:color-mix(in srgb,var(--k) 5%,var(--sheet))}
+.strip{display:flex;align-items:center;gap:3px;padding:7px 12px;border-top:1px solid var(--line);background:var(--sheet);background:color-mix(in srgb,var(--k) 5%,var(--sheet))}
 .strip i{width:14px;height:8px;border-radius:2px;background:var(--c)}
 .strip svg{width:14px;height:14px;margin:0 6px;fill:none;stroke:var(--mut);stroke-width:1.4}
 .strip b{margin-inline-start:auto;color:var(--mut);font:800 13px/1 var(--fn);letter-spacing:.08em;direction:ltr}
@@ -218,7 +223,7 @@ svg.i{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-
 .dnum{font-size:24px;text-decoration:none}
 
 /* ========== أدوات البحث والأقسام ========== */
-.tb{position:sticky;top:calc(var(--bar) + var(--rule) + env(safe-area-inset-top,0px));z-index:6;margin:14px -16px 0;padding:8px 16px 0;background:color-mix(in srgb,var(--mat) 94%,transparent);border-bottom:1px solid transparent}
+.tb{position:sticky;top:calc(var(--bar) + var(--rule) + env(safe-area-inset-top,0px));z-index:6;margin:14px -16px 0;padding:8px 16px 0;background:var(--mat);background:color-mix(in srgb,var(--mat) 94%,transparent);border-bottom:1px solid transparent}
 .tb.stuck{border-bottom-color:var(--line)}
 .srow{display:flex;gap:8px}
 .search{flex:1;position:relative;display:block}
@@ -242,7 +247,7 @@ svg.i{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-
 
 /* ========== ورقة القسم وصفوف المواد ========== */
 .sheet{background:var(--sheet);border:1px solid var(--line);border-radius:16px;margin-top:14px;overflow:hidden}
-.sh{position:relative;overflow:hidden;display:flex;align-items:center;gap:10px;padding:12px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--k) 7%,var(--sheet))}
+.sh{position:relative;overflow:hidden;display:flex;align-items:center;gap:10px;padding:12px;border-bottom:1px solid var(--line);background:var(--soft);background:color-mix(in srgb,var(--k) 7%,var(--sheet))}
 .chev{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:var(--k)}
 .chev svg{width:24px;height:24px;fill:none;stroke:var(--t);stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
 .sh h2{flex:1;font-size:21px}
@@ -252,9 +257,11 @@ svg.i{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-
 .c{position:relative;display:grid;grid-template-columns:72px minmax(0,1fr) auto;grid-template-areas:"th nm pr" "th cp cp" "th ft ft";gap:4px 12px;align-items:center;padding:12px;border-bottom:1px solid var(--line)}
 .rows .c:last-child{border-bottom:0}
 @media(min-width:900px){.rows .c:nth-last-child(2):nth-child(odd){border-bottom:0}}
+article.c{background:var(--sheet)}
+.c::after{border-radius:inherit}
 .c::before{content:"";position:absolute;inset-block:10px;inset-inline-start:0;width:4px;border-radius:4px 0 0 4px;background:var(--k);transform:scaleY(0);transition:transform .2s}
 .c.has::before{transform:none}
-.th{grid-area:th;align-self:start;padding:0;border:0;cursor:pointer;width:72px;height:72px;border-radius:10px;overflow:hidden;outline:1px solid var(--edge);outline-offset:-1px;background:color-mix(in srgb,var(--k) 14%,var(--soft));display:grid;place-items:center}
+.th{grid-area:th;align-self:start;padding:0;border:0;cursor:pointer;width:72px;height:72px;border-radius:10px;overflow:hidden;outline:1px solid var(--edge);outline-offset:-1px;background:var(--soft);background:color-mix(in srgb,var(--k) 14%,var(--soft));display:grid;place-items:center}
 .th svg{width:34px;height:34px;fill:none;stroke:var(--kl);stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round;opacity:.9}
 .pimg{background-position:center;background-size:cover;background-repeat:no-repeat}
 .th .pimg{display:block;width:100%;height:100%}
@@ -277,12 +284,12 @@ svg.i{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-
 .wpl small{color:var(--mut);font-size:13px}
 .pimg.contain{background-size:contain;background-color:#fff}
 .spec dt{color:var(--mut);font-size:13px;font-weight:700}
-.spec dd{margin:0;font-weight:700;font-size:15px;unicode-bidi:plaintext}
+.spec dd{margin:0;font-weight:700;font-size:15px;unicode-bidi:plaintext;text-align:right}
 .fin{margin-bottom:12px}
 .fin h3{font:700 13px var(--fb);color:var(--mut);margin-bottom:6px}
 .one{display:flex;align-items:center;gap:12px;padding:12px;border:1.5px solid var(--line);border-radius:12px}
 .one b{font-size:30px;line-height:1}
-.one span{flex:1;color:var(--mut);font-size:14px}
+.one>span{flex:1;color:var(--mut);font-size:14px}
 .pk{flex:1;min-width:0;min-height:44px;margin-top:2px;border:1.5px dashed var(--line);border-radius:8px;background:none;color:var(--mut);font:700 13px var(--fb);white-space:nowrap}
 .pk:disabled{opacity:.35;cursor:default}
 .c h3{grid-area:nm;align-self:end;font:700 16px/1.35 var(--fb);overflow-wrap:anywhere}
@@ -302,11 +309,11 @@ svg.i{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-
 .addb{display:flex;align-items:center;gap:4px;min-height:48px;padding:0 14px 0 10px;border-radius:10px;border:0;background:var(--k);color:var(--t);font:700 14px var(--fb);white-space:nowrap}
 .addb svg{width:18px;height:18px;stroke-width:2.6}
 .stp{display:flex;align-items:center;gap:2px;height:48px;width:140px;padding:2px;border-radius:10px;background:var(--k);color:var(--t)}
-.stp button{flex:none;display:grid;place-items:center;width:44px;height:44px;padding:0;border:0;border-radius:8px;background:color-mix(in srgb,var(--t) 16%,transparent)}
+.stp button{flex:none;display:grid;place-items:center;width:44px;height:44px;padding:0;border:0;border-radius:8px;background:rgba(127,127,127,.22);background:color-mix(in srgb,var(--t) 16%,transparent)}
 .stp button svg{width:18px;height:18px;stroke-width:2.6}
 .stp input{flex:1;min-width:0;width:100%;height:44px;padding:0;border:0;border-radius:6px;background:transparent;font:800 22px var(--fn);text-align:center;direction:ltr;-moz-appearance:textfield;appearance:textfield}
 .stp input::-webkit-outer-spin-button,.stp input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
-.stp input:focus{outline:none;background:color-mix(in srgb,var(--t) 18%,transparent)}
+.stp input:focus{outline:none;background:rgba(127,127,127,.22);background:color-mix(in srgb,var(--t) 18%,transparent)}
 
 /* ========== النافذة السفلية ========== */
 dialog{border:0;padding:0;width:100%;max-width:560px;max-height:88vh;max-height:88dvh;margin:auto auto 0;border-radius:18px 18px 0 0;background:var(--sheet);color:var(--ink);overflow:auto;overscroll-behavior:contain;animation:sheet .3s cubic-bezier(.2,.8,.2,1)}
@@ -340,7 +347,7 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
 .sw.on{border-color:var(--ink)}
 .swc{grid-column:1/-1;height:64px;border-radius:4px;box-shadow:inset 0 0 0 1px rgba(128,128,128,.5)}
 .tr{background:repeating-conic-gradient(#c9ced4 0 25%,#fff 0 50%) 0 0/14px 14px}
-.sw span{font-weight:700;font-size:15px}
+.sw>span{font-weight:700;font-size:15px}
 .sw b{font-size:22px;line-height:1}
 .sw>[data-slot],.sw .pkr{grid-column:1/-1}
 .pkr{display:flex;gap:6px}
@@ -360,7 +367,8 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
 
 /* ========== صفحة عن محلنا ========== */
 .hero{display:grid;justify-items:center;gap:8px;padding:10px 0 4px;text-align:center}
-.mark{display:block;width:min(52vw,230px);height:auto;overflow:visible;animation:fl 5s 1.6s ease-in-out infinite alternate}
+.hero{--mw:min(52vw,230px)}
+.mark{display:block;width:var(--mw);height:auto;overflow:visible;animation:fl 5s 1.6s ease-in-out infinite alternate}
 .hub{filter:var(--hubf)}
 .mark .arm{transform-box:view-box;transform-origin:0 0;animation:arm .9s cubic-bezier(.2,.9,.25,1.15) both;animation-delay:calc(var(--n)*.1s)}
 .mark .hub{transform-box:fill-box;transform-origin:center;animation:pop .6s .5s cubic-bezier(.3,1.5,.5,1) both}
@@ -382,7 +390,7 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
 .cg{background:var(--sheet);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:14px}
 .cc{position:relative;display:flex;gap:12px;align-items:center;min-height:68px;padding:10px 12px;border-bottom:1px solid var(--line);text-decoration:none}
 .cc:last-child{border-bottom:0}
-.cc .ic{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:10px;background:color-mix(in srgb,var(--k) 16%,var(--soft));color:var(--kl)}
+.cc .ic{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:10px;background:var(--soft);background:color-mix(in srgb,var(--k) 16%,var(--soft));color:var(--kl)}
 .cc .tx{flex:1;min-width:0;text-decoration:none}
 .cc small{display:block;color:var(--mut);font-size:13px}
 .cc strong{display:block;font-size:16px;overflow-wrap:anywhere}
@@ -390,13 +398,19 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
 .map{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--soft);margin-top:10px}
 .map iframe{display:block;width:100%;height:300px;border:0}
 .map .btn{width:100%;border-radius:0;border:0;min-height:52px}
-.gal{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));margin-top:14px}
 .gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;display:block;background:var(--soft)}
 .empty{text-align:center;padding:28px 16px;border:1.5px dashed var(--mut);border-radius:16px;color:var(--mut);background:var(--sheet);margin-top:14px}
 .empty .btn{margin-top:10px}
 .set{display:grid;gap:18px;margin-top:14px;max-width:560px}
-.set h3{font:700 14px var(--fb);color:var(--mut);margin-bottom:6px}
+.set h2,.set h3{font:700 14px var(--fb);color:var(--mut);margin-bottom:6px}
 .hint{font-size:13px;color:var(--mut)}
+/* أزرار تحت عنوان قائمة الأسعار + ملاحظة الطلبية */
+.hact{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.hact .btn{min-height:44px;padding:0 14px;font-size:14px}
+.hact svg.i{width:20px;height:20px}
+.cnote{display:flex;gap:8px;align-items:center;margin-top:12px;padding:8px 10px;border:1.5px dashed var(--line);border-radius:10px;font-size:13px;color:var(--mut)}
+.cnote p{flex:1;margin:0;overflow-wrap:anywhere}.cnote b{color:var(--ink)}.cnote .ib{flex:none;width:40px;height:40px}
+.xwo .btn+.btn{margin-top:-8px}
 .own{display:block;margin:6px auto 0;min-height:40px;padding:0 12px;border:0;background:none;color:var(--mut);font:400 12px var(--fb);opacity:.75}
 
 /* ========== الفوتر ========== */
@@ -452,7 +466,7 @@ dialog .toast{bottom:calc(14px + env(safe-area-inset-bottom,0px))}
 .sq{flex:none;width:22px;height:22px;border-radius:5px;box-shadow:inset 0 0 0 1px rgba(128,128,128,.55)}
 .av{grid-column:1/-1;display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--mut);cursor:pointer}
 .av input{width:20px;height:20px;accent-color:var(--wa)}
-.dirty{background:color-mix(in srgb,var(--yel) 25%,transparent)!important}
+.dirty{background:rgba(253,224,27,.25)!important;background:color-mix(in srgb,var(--yel) 25%,transparent)!important}
 .sbar{position:sticky;bottom:calc(-20px - env(safe-area-inset-bottom,0px));margin:18px -12px -20px;padding:12px 12px calc(12px + env(safe-area-inset-bottom,0px));background:var(--sheet);border-top:1px solid var(--line);display:flex;gap:10px;align-items:center}
 .sbar .btn{flex:1;min-height:50px}
 .sbar .msg{flex:1}
@@ -484,7 +498,7 @@ dialog .toast{bottom:calc(14px + env(safe-area-inset-bottom,0px))}
 /* ===== تحسينات المرحلة 1 ===== */
 @media(max-width:699px){
   .hero{gap:4px;padding:4px 0 0}
-  .mark{width:min(26vw,104px)}
+  .hero{--mw:min(26vw,104px)}
   .wm{font-size:clamp(32px,10.5vw,58px)}
   .tagl{font-size:15px}
   .hero+h1{margin-top:12px!important}
@@ -493,32 +507,15 @@ dialog .toast{bottom:calc(14px + env(safe-area-inset-bottom,0px))}
 .dnum{display:inline-flex;align-items:center;min-height:44px}
 .fnum{padding:4px 0;min-height:44px}
 
-/* ===== أعمالنا: بطاقات بستايل الموقع ===== */
-.gal{display:block;columns:2;column-gap:10px;margin-top:16px}
-@media(min-width:700px){.gal{columns:3;column-gap:14px}}
-.wk{position:relative;break-inside:avoid;margin:0 0 10px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--sheet);box-shadow:0 1px 0 var(--line)}
-@media(min-width:700px){.wk{margin-bottom:14px}}
-.wk::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--k);z-index:2}
-.wkb{position:relative;display:block;width:100%;padding:0;border:0;background:var(--soft);cursor:zoom-in}
-.gal .wkb img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:cover;border-radius:0;transition:transform .3s}
-@media(hover:hover){.wkb:hover img{transform:scale(1.03)}}
-.wkb:focus-visible{outline:3px solid var(--k);outline-offset:-3px}
-.wkp{position:absolute;inset:0;margin:auto;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--k);box-shadow:0 2px 10px rgba(0,0,0,.35)}
-.wkp svg{width:24px;height:24px;fill:#fff}
-.wk figcaption{display:flex;align-items:center;gap:7px;padding:9px 10px;font:700 13px/1.35 var(--fb);color:var(--ink)}
-.wk figcaption i{flex:none;width:9px;height:9px;border-inline-start:3px solid var(--k);border-top:3px solid var(--k);transform:rotate(-45deg);border-radius:1px}
-[dir=rtl] .wk figcaption i{transform:rotate(45deg)}
-.wk figcaption span{flex:1;min-width:0}
-.wk figcaption b{flex:none;font-size:12px;color:var(--mut)}
+/* ===== أعمالنا: تكبير الصورة ===== */
 .wkv{display:block;width:100%;max-height:74vh;object-fit:contain;border-radius:12px;background:#000}
 
 /* ===== أعمالنا: عرض بشاشة كاملة لكل عمل ===== */
 #v-work{overflow-x:clip}
-.gal{display:block;columns:auto;margin-top:6px}
+.gal{margin-top:6px}
 .xwi{min-height:34svh;display:grid;align-content:center;justify-items:start;gap:22px;padding:8px 0 30px}
 .xwi p{font:700 clamp(19px,5.4vw,28px)/1.5 var(--fh);max-width:22ch;text-wrap:balance}
-.xwar{width:22px;height:22px;border-inline-end:4px solid var(--red);border-bottom:4px solid var(--red);transform:rotate(45deg);border-radius:2px;animation:xwar 1.4s ease-in-out infinite}
-[dir=rtl] .xwar{transform:rotate(45deg)}
+.xwar{width:22px;height:22px;border-right:4px solid var(--red);border-bottom:4px solid var(--red);transform:rotate(45deg);border-radius:2px;animation:xwar 1.4s ease-in-out infinite}
 @keyframes xwar{50%{translate:0 10px}}
 .xw{--r:18px;position:relative;isolation:isolate;width:100vw;margin-inline:calc(50% - 50vw);min-height:100svh;display:grid;align-content:center;gap:26px;padding:64px 20px;overflow:hidden}
 .xw.alt:not(.xw-full){background:var(--sheet);border-block:1px solid var(--line)}
@@ -555,7 +552,7 @@ dialog .toast{bottom:calc(14px + env(safe-area-inset-bottom,0px))}
 /* 4) عريضة: شريط غامق والصورة من الحافة للحافة */
 .xw-wide{background:var(--ink)!important;color:var(--sheet);border:0!important}
 .xw-wide .xwf{cursor:default;width:100vw;margin-inline:-20px;border-radius:0;box-shadow:none;border:0;border-block:6px solid var(--k)}
-.xw-wide .xwd,.xw-wide .xwc{color:color-mix(in srgb,var(--sheet) 78%,transparent)}
+.xw-wide .xwd,.xw-wide .xwc{color:var(--sheet);color:color-mix(in srgb,var(--sheet) 78%,transparent)}
 .xw-wide .xws li{background:transparent;color:var(--sheet)}
 /* شبكة صور الأعمال: مربعات متساوية، والصف الأخير دائمًا ممتلئ */
 .xwx{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:32px 0 8px}
@@ -611,8 +608,8 @@ dialog .toast{bottom:calc(14px + env(safe-area-inset-bottom,0px))}
   .btn:hover{scale:1.07;box-shadow:0 8px 22px rgba(0,0,0,.2)}
   .btn.wa:hover{scale:1.07;translate:0 -3px;box-shadow:0 10px 24px rgba(0,0,0,.24)}
   .fab:hover{scale:1.14;rotate:8deg}
-  article.c:hover{translate:0 -6px;rotate:-.6deg;box-shadow:0 14px 28px rgba(0,0,0,.14)}
-  article.c:nth-child(even):hover{translate:0 -6px;rotate:.6deg;box-shadow:0 14px 28px rgba(0,0,0,.14)}
+  article.c:hover{z-index:2;border-radius:12px;border-color:transparent;translate:0 -6px;rotate:-.6deg;box-shadow:0 0 0 1px var(--line),0 14px 28px rgba(0,0,0,.14)}
+  article.c:nth-child(even):hover{rotate:.6deg}
   .th:hover img{scale:1.1}
   .addb:hover{scale:1.1;rotate:-2deg}
   .pk:hover{translate:0 -3px;scale:1.05}
@@ -654,6 +651,9 @@ dialog .toast{bottom:calc(14px + env(safe-area-inset-bottom,0px))}
 .xws li:active{rotate:-3deg;scale:1.1}
 .xws li:nth-child(even):active{rotate:3deg;scale:1.1}
 .xwb:active{rotate:0deg;scale:1.1}
+/* الأزرار العريضة: تكبير خفيف حتى ما تطلع برّه النافذة أو القائمة */
+dialog,.drawer{overflow-x:hidden}
+.btn.full:is(:hover,:active),.dfoot .btn:is(:hover,:active),.sbar .btn:is(:hover,:active),.map .btn:is(:hover,:active),.set .btn:is(:hover,:active){scale:1.02;translate:none}
 @media(prefers-reduced-motion:reduce){:is(.ib,.brand svg,.chip,.btn,.fab,article.c,.th img,.addb,.pk,.opt,.back,.nmb,.dnum,.fnum,.lnk,.lnk2,.tx,.own,.steps li,.xws li,.xwb,.xwa img,.xwf img,.bigb img){scale:1!important;rotate:none!important;translate:none!important}}
 </style>
 </head>
@@ -688,6 +688,7 @@ dialog .toast{bottom:calc(14px + env(safe-area-inset-bottom,0px))}
     <h1 data-t="priceList" style="margin-top:22px">قائمة الأسعار</h1>
     <p class="lede" id="plede"></p>
     <p class="upd" id="upd" hidden></p>
+    <div class="hact" id="hact"></div>
     <div class="tb" id="tb">
       <div class="srow">
         <label class="search"><span class="sr" data-t="search"></span>
@@ -699,6 +700,15 @@ dialog .toast{bottom:calc(14px + env(safe-area-inset-bottom,0px))}
       <div class="cw" id="cw"><div class="chips" id="chips"></div></div>
     </div>
     <div id="grid"></div>
+  </div>
+</div>
+
+<div class="view" id="v-studio" hidden>
+  <div class="wrap" id="studioWrap">
+    <a class="back" href="#"></a>
+    <h1 data-t="navStudio"></h1>
+    <p class="lede" data-t="studioLede"></p>
+    <div id="studio"><p class="hint" style="padding:40px 0;text-align:center">…</p></div>
   </div>
 </div>
 
@@ -733,7 +743,7 @@ dialog .toast{bottom:calc(14px + env(safe-area-inset-bottom,0px))}
   <div class="wrap">
     <a class="back" href="#"></a>
     <h1 data-t="settings"></h1>
-    <div id="prefs"></div>
+    <div id="prefsBox"></div>
   </div>
 </div>
 </main>
@@ -747,7 +757,7 @@ dialog .toast{bottom:calc(14px + env(safe-area-inset-bottom,0px))}
     <a class="btn wa" id="hw2" target="_blank" rel="noopener"></a>
     <p class="nt" id="note"></p>
     <a class="lnk2" id="setb" href="#prefs"></a>
-    <p class="nt">© <span id="yr"></span> Ahmed Reklam</p>
+    <p class="nt" dir="ltr">© <span id="yr"></span> Ahmed Reklam</p>
     <p class="dsg" data-t="designer"></p>
   </div>
 </footer>
@@ -790,7 +800,7 @@ const SHOP = {
   instagram: "",                    // رابط إنستغرام
   facebook:  "",                    // رابط فيسبوك
   tiktok:    "",                    // رابط تيك توك
-  updated:   "2026-11-12",          // تاريخ آخر تحديث للأسعار (يتحدّث تلقائياً من لوحة المالك)
+  updated:   "2026-11-20",          // تاريخ آخر تحديث للأسعار (يتحدّث تلقائياً من لوحة المالك)
   rate:      0,                     // سعر الدولار بالدينار (مثل 1450). إذا 0 يختفي زر الدينار
   photos:    "",                    // (اختياري) مجلد صور: إذا تكتب "img/" وتحط img/sol.jpg تطلع صورة للسولفنت تلقائياً
   gallery:   WORKS                  // أعمالنا: مصفوفة WORKS فوق (صورة أو فيديو مع وصف [عربي, كوردي])
@@ -812,7 +822,7 @@ const FINISH = [["لماع","لەماع"], ["مات","مات"]];
 // الألوان: [عربي, كوردي, اللون, السعر]. السعر null = نفس سعر المادة
 const PLASTIC_COLORS = [
   ["أبيض","سپی","#ffffff",38], ["أسود","رەش","#151515",38], ["أصفر","زەر","#ffd400",35],
-  ["أخضر","کەسک","#1fa64a",35], ["شفاف","شەفاف","",35], ["أحمر","سوور","#e4000f",35],
+  ["أخضر","کەسک","#1fa64a",35], ["شفاف","شەفاف","",35], ["أحمر","سۆر","#e4000f",35],
   ["برتقالي","پرتەقالی","#f08000",35], ["أزرق فاتح","شینێ ئەسمانی","#5bc0eb",35], ["نيلي","شینێ تاری","#1b2b6b",35]
 ];
 const LED_COLORS = [["أبيض","سپی","#ffffff",null], ["شمسي","گەرم","#ffc46b",null], ["أحمر","سۆر","#e4000f",null]];
@@ -842,7 +852,7 @@ const CATS = [
       spec:[S("finish",["لماع · مات","لەماع · مات"],1), S("roll",["50 م","50 م"],1), S("widths",W(STICKER_WIDTHS))] },
     { id:"mesh", img:"mesh", name:["لاصق ميش","ستیکەرێ میش"], price:2.20, unit:U.m2, draw:["sheet","mesh"], widths:STICKER_WIDTHS, len:50,
       spec:[S("roll",["50 م","50 م"],1), S("widths",W(STICKER_WIDTHS))] },
-    { id:"clear", name:["لاصق شفاف","ستیکەرێ شەفاف"], price:null, unit:U.m2, draw:["sheet","peel"], widths:[152,107], len:50,
+    { id:"clear", name:["لاصق شفاف","ستیکەرێ شەفاف"], price:2.20, unit:U.m2, draw:["sheet","peel"], widths:[152,107], len:50,
       spec:[S("roll",["50 م","50 م"],1), S("widths",W([152,107]),1)] }
   ]},
   { name:["ألواح الفووم","تەختێن فۆمێ"], color:"blue", text:"#fff", items:[
@@ -892,7 +902,7 @@ ar:{
   ab:"في Ahmed Reklam نوفّر مواد الطباعة والدعاية والإعلان: فليكس بعروض متعددة، لواصق عادية وميش، بلاستك بألوان مختلفة، ألواح فووم، أحبار وسولفنت، إضاءة ومحوّلات وملحقات. تصفّح المواد، اجمع طلبيتك، وأرسلها لنا بواتساب.",
   hk:"كيف تطلب؟",
   s1:"اختر المادة، وحدّد القياس أو اللون",
-  s2:"أضفها إلى طلبيتك، وتقدر تجمع أكثر من مادة",
+  s2:"أضفها إلى طلبيتك، ويمكنك جمع أكثر من مادة في طلبية واحدة",
   s3:"أرسل الطلبية بواتساب، ونؤكد لك السعر وموعد التجهيز",
   pk:"اختر واطلب", pt:"المواد والأسعار", all:"الكل", search:"ابحث عن مادة…", none:"لا توجد مادة بهذا الاسم",
   pick:"اختر القياس", pickc:"اختر اللون", szs:"قياسات", cls:"ألوان", from:"ابتداءً من",
@@ -906,13 +916,13 @@ ar:{
   note:"الأسعار بالدولار الأمريكي وقابلة للتغيير، تواصل معنا للتأكيد.",
   noteIqd:"الأسعار بالدينار تقريبية حسب سعر الصرف، تواصل معنا للتأكيد.",
   dark:"الوضع الداكن", light:"الوضع الفاتح",
-  hello:"السلام عليكم، أريد أطلب:", end:"يرجى تأكيد السعر والتوفر.",
+  hello:"السلام عليكم، أريد طلب ما يلي:", end:"يرجى تأكيد السعر والتوفر.",
   mi:"السلام عليكم، أريد الاستفسار عن المواد والأسعار",
-  tabShop:"المواد والأسعار", tabAbout:"عن محلنا", ak:"عن محلنا", svcK:"شغلنا وخدماتنا", lk:"موقعنا", lt:"تعال زورنا", openMap:"افتح الموقع بالخرائط",
+  tabShop:"المواد والأسعار", tabAbout:"عن محلنا", ak:"عن محلنا", svcK:"خدماتنا", lk:"موقعنا", lt:"زُرنا", openMap:"افتح الموقع بالخرائط",
   na:"غير متوفر حالياً", settings:"الإعدادات والخصوصية", theme:"المظهر", auto:"تلقائي", lightS:"فاتح", darkS:"داكن", lang:"اللغة", curT:"العملة", usd:"دولار",
-  privacy:"الخصوصية", privTxt:"الموقع ما يجمع أي معلومات عنك. طلبيتك وإعداداتك تنحفظ بجهازك بس.", clearData:"مسح طلبيتي وإعداداتي من هذا الجهاز", cleared:"انمسحت البيانات", ownerLogin:"دخول المالك",
+  privacy:"الخصوصية", privTxt:"لا يجمع الموقع أي معلومات عنك، وتُحفظ طلبيتك وإعداداتك على جهازك فقط.", clearData:"مسح طلبيتي وإعداداتي من هذا الجهاز", cleared:"انمسحت البيانات", ownerLogin:"دخول المالك",
   navHome:"الرئيسية", navAbout:"عن محلنا", navWork:"أعمالنا", navContact:"تواصل معنا", menu:"القائمة", catK:"الأقسام", catT:"تصفّح حسب القسم", itemsW:"مادة",
-  workEmpty:"قريباً نضيف هنا صور من أعمالنا. تقدر تطلب نماذج من شغلنا عبر واتساب.", settingsK:"الإعدادات"
+  workEmpty:"قريباً نضيف هنا صوراً من أعمالنا، ويمكنك طلب نماذج منها عبر واتساب.", settingsK:"الإعدادات"
 },
 ku:{
   tag:"کەرەستێن چاپ و رێکلامێ", sub:"فلێکس، ستیکەر، پلاستیک، فۆم، رۆناهی و مەرەکەب — بهایێن ئاشکرا و داخوازیا راستەوخۆ ب واتسئاپێ.",
@@ -948,8 +958,8 @@ ku:{
 /* =====================================================================
    من هنا وجوّه: كود الصفحة (ما تحتاج تعدّله)
    ===================================================================== */
-Object.assign(T.ar, { priceList:"قائمة الأسعار", addS:"أضف", undo:"تراجع", clearedCart:"أُفرغت الطلبية", showAll:"عرض كل المواد", skip:"تخطَّ إلى المواد", zoomL:"تكبير صورة", askP:"السعر عند الطلب", askB:"اسأل عن السعر", askMsg:"السلام عليكم، أريد سعر", chooseFin:"اختر الوجه", unitL:"طريقة البيع", details:"تفاصيل", updatedL:"آخر تحديث للأسعار", designer:"المصمم: عبدالله", carton:"كارتون" });
-Object.assign(T.ku, { priceList:"لیستا بهایان", addS:"زێدەکرن", navWork:"کارێن مە", undo:"زڤڕین", clearedCart:"داخوازی هاتە ڤالاکرن", showAll:"هەمی کەرەستان نیشان بدە", skip:"بازدان بۆ کەرەستان", zoomL:"مەزنکرنا وێنێ", askP:"بها ب پرسیارێ", askB:"پرسیارا بهای بکە", askMsg:"سلاڤ، من بهایێ ڤێ دڤێت:", chooseFin:"رووی هەلبژێرە", unitL:"شێوازێ فرۆتنێ", details:"هویرکاری", updatedL:"دویماهیک نویکرنا بهایان", designer:"دیزاینەر: عەبدوللا", carton:"کارتۆن" });
+Object.assign(T.ar, { priceList:"قائمة الأسعار", addS:"أضف", undo:"تراجع", clearedCart:"أُفرغت الطلبية", showAll:"عرض كل المواد", skip:"تخطَّ إلى المواد", zoomL:"تكبير صورة", askP:"السعر عند الطلب", askB:"اسأل عن السعر", askMsg:"السلام عليكم، أريد معرفة سعر", chooseFin:"اختر الوجه", unitL:"طريقة البيع", details:"تفاصيل", updatedL:"آخر تحديث للأسعار", designer:"المصمم: عبدالله", carton:"كارتون", docT:"قائمة أسعار مواد الطباعة والإعلان", sendIdea:"أرسل فكرتك عبر واتساب", projMsg:"السلام عليكم، عندي فكرة لوحة أو مشروع وأريد التصميم والسعر.", noNet:"تعذّر الاتصال بالإنترنت، جرّب مرة ثانية.", navStudio:"صمّم لوحتك", studioLede:"اكتب اسم محلك وشاهد لوحتك مضاءة ليلاً، مع عدد الليتات والمحوّلات والألواح التي تحتاجها.", priceImg:"صورة الأسعار", imgWait:"جارِ تجهيز الصورة…", noteL:"ملاحظة" });
+Object.assign(T.ku, { priceList:"لیستا بهایان", addS:"زێدەکرن", navWork:"کارێن مە", undo:"زڤڕین", clearedCart:"داخوازی هاتە ڤالاکرن", showAll:"هەمی کەرەستان نیشان بدە", skip:"بازدان بۆ کەرەستان", zoomL:"مەزنکرنا وێنێ", askP:"بها ب پرسیارێ", askB:"پرسیارا بهای بکە", askMsg:"سلاڤ، من بهایێ ڤێ دڤێت:", chooseFin:"رووی هەلبژێرە", unitL:"شێوازێ فرۆتنێ", details:"هویرکاری", updatedL:"دویماهیک نویکرنا بهایان", designer:"دیزاینەر: عەبدوللا", carton:"کارتۆن", docT:"لیستا بهایێن کەرەستێن چاپ و رێکلامێ", sendIdea:"هزرا خۆ ب واتسئاپێ فرێکە", projMsg:"سلاڤ، من هزرا تابلۆیەکێ یان پرۆژەیەکێ هەیە و من دیزاین و بها دڤێت.", noNet:"پەیوەندی ب ئینتەرنێتێ نەبوو، دووبارە هەول بدە.", navStudio:"تابلۆیا خۆ دیزاین بکە", studioLede:"ناڤێ دکانا خۆ بنڤیسە و تابلۆیا خۆ ب رۆناهیێ ل شەڤێ ببینە، دگەل ژمارا لایت و ترانسفۆرمەر و تەختێن پێدڤی.", priceImg:"وێنەیێ بهایان", imgWait:"وێنە دهێتە ئامادەکرن…", noteL:"تێبینی" });
 
 const LOGO = "assets/5134c2dc97.png";
 const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s);
@@ -989,7 +999,8 @@ const I = {
   x: sv(`<path d="M6 6l12 12M18 6L6 18"/>`),
   fwd: sv(`<path d="M9 6l6 6-6 6"/>`),
   plus: sv(`<path d="M12 5v14M5 12h14"/>`),
-  minus: sv(`<path d="M5 12h14"/>`)
+  minus: sv(`<path d="M5 12h14"/>`),
+  spark: sv(`<path d="M11 3l1.9 5.1L18 10l-5.1 1.9L11 17l-1.9-5.1L4 10l5.1-1.9z"/><path d="M18.5 15l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9z"/>`)
 };
 const I2 = {
   gear: I.cog,
@@ -1047,11 +1058,13 @@ const thumb = (c, it) => hasImg(it)
   ? `<span class="pimg im-${it.img}${it.fit ? " contain" : ""}"></span>`
   : SHOP.photos ? `<img src="${esc(SHOP.photos + it.id + ".jpg")}" alt="" onerror="this.outerHTML=this.dataset.fb" data-fb='${chev(c.color)}'>`
   : chev(c.color);
-const bigPhoto = (it, full) => hasImg(it) ? `<div class="big pimg im-${it.img}${full ? " full" : ""}${it.fit ? " contain" : ""}"></div>`
+const bigPhoto = (it, full) => hasImg(it) ? `<span class="big pimg im-${it.img}${full ? " full" : ""}${it.fit ? " contain" : ""}"></span>`
   : SHOP.photos ? `<img class="big${full ? " full" : ""}" src="${esc(SHOP.photos + it.id + ".jpg")}" alt="" onerror="this.remove()">` : "";
 
 /* ---------- الطلبية (تنحفظ بالجهاز) ---------- */
 let CART = {};
+let CNOTE = store.get("cnote") || "";                              // ملاحظة تنضاف لرسالة الطلبية (مثلاً من «صمّم لوحتك»)
+function setNote(v){ CNOTE = v || ""; if (CNOTE) store.set("cnote", CNOTE); else { try { localStorage.removeItem("cnote"); } catch(e) {} } }
 try { CART = JSON.parse(store.get("cart") || "{}") || {}; } catch(e) { CART = {}; }
 const parseKey = k => { const [id, o, f] = k.split(":"); const r = BY_ID[id]; if (!r || r.it.off || r.it.price == null) return null; const oi = +o;
   if (r.it.widths && !(oi in r.it.widths)) return null; if (r.it.colors && !(oi in r.it.colors)) return null;
@@ -1068,7 +1081,7 @@ const MAXQ = 99999;
 function stepper(k, short){
   const q = CART[k] || 0, x = t();
   return q
-    ? `<div class="stp"><button data-dec="${k}" aria-label="${x.less}">${I.minus}</button><input type="number" inputmode="numeric" pattern="[0-9]*" min="0" max="${MAXQ}" value="${q}" data-qty="${k}" aria-label="${x.qty}"><button data-inc="${k}" aria-label="${x.more}">${I.plus}</button></div>`
+    ? `<div class="stp"><button data-dec="${k}" aria-label="${x.less}">${I.minus}</button><input type="number" inputmode="numeric" min="0" max="${MAXQ}" value="${q}" data-qty="${k}" aria-label="${x.qty}"><button data-inc="${k}" aria-label="${x.more}">${I.plus}</button></div>`
     : `<button class="addb" data-inc="${k}">${I.plus}<span>${x.addS}</span></button>`;
 }
 let toastT;
@@ -1085,6 +1098,7 @@ function setQty(k, q, src){
   const before = CART[k] || 0;
   q = Math.max(0, Math.min(MAXQ, Math.floor(q) || 0));
   if (q) CART[k] = q; else delete CART[k];
+  if (!Object.keys(CART).length && CNOTE) setNote("");
   store.set("cart", JSON.stringify(CART));
   $$(`[data-slot="${k}"]`).forEach(s => { if (!(src && s.contains(src))) s.innerHTML = stepper(k); });
   const id = k.split(":")[0], n = qtyOfItem(id);
@@ -1138,6 +1152,7 @@ function render(){
   $("#fnum").href = $("#dnum").href = "tel:" + SHOP.phone; $("#fnum").textContent = $("#dnum").textContent = SHOP.phoneShow;
   $("#setb").innerHTML = I.cog + `<span>${x.settings}</span>`;
   $$(".back").forEach(a => a.innerHTML = I.fwd + `<span>${x.priceList}</span>`);
+  $("#hact").innerHTML = `<button class="btn sm" id="pib">${I.pics}<span>${x.priceImg}</span></button><a class="btn sm k" href="#studio" style="--k:var(--ink);--t:var(--sheet)">${I.spark}<span>${x.navStudio}</span></a>`;
   $("#dnav").setAttribute("aria-label", x.menu);
   $("#note").textContent = $("#plede").textContent = CUR === "iqd" ? x.noteIqd : x.note;
   { const [y, mo, d] = (SHOP.updated || "").split("-"); $("#upd").hidden = !d; if (d) $("#upd").innerHTML = `${x.updatedL}: <b class="num">${d}/${mo}/${y}</b>`; }
@@ -1150,10 +1165,17 @@ function render(){
   $("#chips").innerHTML = `<button class="chip" aria-pressed="${F === -1}" data-i="-1" style="--k:var(--ink);--kl:var(--ink);--t:var(--sheet)">${x.all} ${total}</button>`
     + CATS.map((c, i) => `<button class="chip" aria-pressed="${i === F}" data-i="${i}" style="${catStyle(c)}">${chev(c.color)}<span>${nm(c.name)}</span></button>`).join("");
   renderGrid(); renderContact(); updateCartBar(false);
+  chipsEnd();
   if (typeof renderNav === "function") { renderNav(); renderView(); setTitle(); }
 }
 // بحث يتسامح بالهمزات والتاء المربوطة وحروف الكيبورد الكوردي/العربي
 const norm = s => String(s).toLowerCase().replace(/[\u064B-\u0652\u0640]/g, "").replace(/[أإآ]/g, "ا").replace(/[ىیێ]/g, "ي").replace(/[ةە]/g, "ه").replace(/ک/g, "ك").replace(/[ۆ]/g, "و").replace(/\s+/g, " ").trim();
+// كلمات بحث إضافية: الاسم الإنجليزي والأسماء الدارجة، حتى يلقى الزبون المادة بأي اسم يكتبه
+const KW = { plastic:"plastic acrylic plexi sheet اكريليك اكريلك بلاستيك", flex440:"flex banner frontlit بنر فلكس", sticker:"sticker vinyl ستيكر فينيل",
+  mesh:"mesh one way perforated ستيكر ون وي", clear:"clear transparent sticker vinyl ستيكر", foam10:"foam forex pvc board فوركس", foam8:"foam forex pvc board فوركس",
+  foam6:"foam forex pvc board فوركس", led6:"led module ليد", led8:"led module ليد", psu100:"power supply adapter باور محول", psu200:"power supply adapter باور محول",
+  psu300:"power supply adapter باور محول", psu400:"power supply adapter باور محول", ink:"ink eco solvent انك", sol:"solvent cleaner", tape:"trim cap edge coil",
+  alu:"aluminium aluminum coil edge", stand:"roll up rollup banner stand رول اب رولاب" };
 const REG = `<svg viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="4"/><path d="M7 0v14M0 7h14"/></svg>`;
 const strip = i => `<div class="strip" aria-hidden="true">${["red","blue","yel","org"].map(k => `<i style="--c:var(--${k})"></i>`).join("")}${REG}${[100,70,45,22].map(p => `<i style="--c:color-mix(in srgb,var(--k) ${p}%,var(--sheet))"></i>`).join("")}<b>AR ${String(i + 1).padStart(2, "0")}/${String(CATS.length).padStart(2, "0")}</b></div>`;
 function renderGrid(){
@@ -1161,13 +1183,12 @@ function renderGrid(){
   let html = "";
   CATS.forEach((c, i) => {
     if (F >= 0 && F !== i) return;
-    const items = c.items.filter(it => !q || it.name.some(s => norm(s).includes(q)) || norm(it.tag || "").includes(q) || norm(nm(c.name)).includes(q));
+    const items = c.items.filter(it => !q || it.name.some(s => norm(s).includes(q)) || norm(it.tag || "").includes(q) || norm(KW[it.id] || "").includes(q) || norm(nm(c.name)).includes(q));
     if (!items.length) return;
     html += `<section class="sheet" style="${catStyle(c)}"><div class="sh"><span class="chev">${chev(c.color)}</span><h2>${nm(c.name)}</h2><span class="cnt">${countW(items.length, x.itemsW)}</span></div><div class="rows">${items.map(it => row(c, it)).join("")}</div>${strip(i)}</section>`;
   });
   $("#grid").innerHTML = html || `<div class="none"><p>${x.none}</p><button class="btn sm" id="showall">${x.showAll}</button></div>`;
   const sa = $("#showall"); if (sa) sa.onclick = () => { Q = ""; $("#q").value = ""; F = -1; $$(".chip").forEach(c => c.setAttribute("aria-pressed", c.dataset.i === "-1")); renderGrid(); };
-  $("#cbtn").setAttribute("aria-label", `${x.cart}: ${cartCount()} — ${money(cartTotal())}`);
 }
 function renderContact(){
   const x = t(), cards = [];
@@ -1242,10 +1263,12 @@ function renderCart(){
   $("#db").innerHTML = lines.map(l => {
     const lab = optLabel(l.it, l.o, l.f), up = optPrice(l.it, l.o);
     return `<div class="ci" style="${catStyle(l.c)}"><b class="n">${nm(l.it.name)}</b><div data-slot="${l.k}">${stepper(l.k)}</div><small>${lab ? lab + " · " : ""}<span class="num">${money(up)}</span> × <span class="num" data-lq="${l.k}">${l.q}</span></small><span class="lt num" data-lt="${l.k}">${money(up * l.q)}</span></div>`;
-  }).join("") + `<div class="sum"><span>${x.total}</span><span class="num" id="sumv">${money(cartTotal())}</span></div><p class="hint">${CUR === "iqd" ? x.noteIqd : x.note}</p>
+  }).join("") + (CNOTE ? `<div class="cnote"><p><b>${x.noteL}:</b> ${esc(CNOTE)}</p><button class="ib" id="cnx" aria-label="${x.close}">${I.x}</button></div>` : "")
+    + `<div class="sum"><span>${x.total}</span><span class="num" id="sumv">${money(cartTotal())}</span></div><p class="hint">${CUR === "iqd" ? x.noteIqd : x.note}</p>
   <a class="btn wa full" id="send" target="_blank" rel="noopener" href="${waLink(cartMessage())}">${I.wa}<span>${x.send}</span></a><button class="lnk" id="clr">${x.clear}</button>`;
-  $("#clr").onclick = () => { const bak = { ...CART }; CART = {}; store.set("cart", "{}"); render(); renderCart();
-    toast(t().clearedCart, t().undo, () => { CART = bak; store.set("cart", JSON.stringify(CART)); render(); if (dlg.open && dlg.dataset.mode === "cart") renderCart(); }); };
+  $("#clr").onclick = () => { const bak = { ...CART }, bn = CNOTE; CART = {}; setNote(""); store.set("cart", "{}"); render(); renderCart();
+    toast(t().clearedCart, t().undo, () => { CART = bak; setNote(bn); store.set("cart", JSON.stringify(CART)); render(); if (dlg.open && dlg.dataset.mode === "cart") renderCart(); }); };
+  const cx = $("#cnx"); if (cx) cx.onclick = () => { setNote(""); renderCart(); };
 }
 function cartNumbers(){
   cartLines().forEach(l => {
@@ -1260,7 +1283,7 @@ function cartMessage(){
   const x = t(), lines = cartLines();
   return [x.hello, ...lines.map((l, i) => { const lab = optLabel(l.it, l.o, l.f);
     return `${i + 1}) ${nm(l.it.name)}${lab ? " — " + lab : ""} × ${l.q} = ${money(optPrice(l.it, l.o) * l.q)}`; }),
-    "", `${x.total}: ${money(cartTotal())}`, x.end].join("\n");
+    ...(CNOTE ? ["", `${x.noteL}: ${CNOTE}`] : []), "", `${x.total}: ${money(cartTotal())}`, x.end].join("\n");
 }
 
 /* ---------- الوضع الفاتح/الداكن ---------- */
@@ -1297,6 +1320,7 @@ function applyLive(d){
     if (Array.isArray(SHOP[k]) && Array.isArray(v)) SHOP[k] = [String(v[0] || ""), String(v[1] || "")];
     else if (typeof SHOP[k] === "string" && typeof v === "string") SHOP[k] = v; });
   if (!(SHOP.rate > 0) && CUR === "iqd") CUR = "usd";
+  else if (SHOP.rate > 0 && store.get("cur") === "iqd") CUR = "iqd";        // الزبون اختار الدينار قبل: نرجّعه بعد ما يوصل سعر الصرف
   Object.keys(CART).forEach(k => { if (!parseKey(k)) delete CART[k]; });
 }
 try { applyLive(JSON.parse(store.get("live") || "null")); } catch(e) {}
@@ -1307,7 +1331,7 @@ function fb(){
   if (!FBP) { const V = "https://www.gstatic.com/firebasejs/10.12.2/";
     FBP = Promise.all([import(V + "firebase-app.js"), import(V + "firebase-auth.js"), import(V + "firebase-firestore.js")])
       .then(([app, A, F]) => { const a = app.initializeApp(FIREBASE); return { A, F, auth: A.getAuth(a), db: F.getFirestore(a) }; })
-      .catch(() => null); }
+      .catch(() => { FBP = null; return null; }); }
   return FBP;
 }
 async function loadLive(){
@@ -1319,7 +1343,8 @@ async function loadLive(){
 
 /* ---------- الصفحات والقائمة الجانبية ---------- */
 let VIEW = "prices", GAL = null, drawerOpen = false;
-const VIEWS = { prices:["priceList","list"], about:["navAbout","info"], work:["navWork","pics"], contact:["navContact","phone"], prefs:["settings","cog"] };
+const SCR = {};                                                     // مكان النزول بكل صفحة (الرجوع لقائمة الأسعار يرجع لنفس المادة)
+const VIEWS = { prices:["priceList","list"], studio:["navStudio","spark"], about:["navAbout","info"], work:["navWork","pics"], contact:["navContact","phone"], prefs:["settings","cog"] };
 function renderNav(){
   const x = t();
   $("#dnav").innerHTML = Object.entries(VIEWS).map(([v, [lab, ic]]) =>
@@ -1332,28 +1357,39 @@ function drawerUI(open){
   $("main").inert = open; $("footer").inert = open;            // الكيبورد وقارئ الشاشة يبقون داخل القائمة
   document.documentElement.classList.toggle("lock", open || dlg.open);
   if (open && matchMedia("(hover:hover) and (pointer:fine)").matches) setTimeout(() => { if (drawerOpen) (d.querySelector("[aria-current]") || d.querySelector("a")).focus({ preventScroll: true }); }, RM ? 0 : 320);
-  else if (d.contains(document.activeElement)) $("#menub").focus();
+  else if (d.contains(document.activeElement)) $("#menub").focus({ preventScroll: true });   // بدون ما تقفز الصفحة
 }
 function drawer(open){ if (open === drawerOpen) return; drawerUI(open); if (open) ovPush("menu"); else if (OV === "menu") ovPop(); }
-const setTitle = () => document.title = "Ahmed Reklam | " + (VIEW === "prices" ? t().tag : t()[VIEWS[VIEW][0]]);
+const setTitle = () => document.title = "Ahmed Reklam | " + (VIEW === "prices" ? t().docT : t()[VIEWS[VIEW][0]]);
 function route(){
   let h = location.hash.slice(1);
   if (h === "owner") { history.replaceState(null, "", location.pathname + location.search); openOwner(); return; }
   const m = h.match(/^([a-z]+)-(sheet|menu)$/), ov = m ? m[2] : ""; if (m) h = m[1];
-  const v = VIEWS[h] ? h : "prices", changed = v !== VIEW; VIEW = v;
+  const v = VIEWS[h] ? h : "prices", changed = v !== VIEW;
+  if (changed) SCR[VIEW] = scrollY;                                // نحفظ مكان النزول حتى نرجعله
+  VIEW = v;
   if (ov && !(ov === "sheet" ? dlg.open : drawerOpen)) {          // رابط قديم أو إعادة تحميل: نرجع للصفحة نفسها بدون نافذة
     OV = ""; try { history.replaceState(null, "", v === "prices" ? location.pathname + location.search : "#" + v); } catch(e) {}
   } else if (!ov) { OV = ""; if (dlg.open) dlg.close(); if (drawerOpen) drawerUI(false); }
   $$("main > .view").forEach(el => el.hidden = el.id !== "v-" + v);
   renderNav(); setTitle(); renderView(); fabState();
-  if (changed) scrollTo(0, 0);
+  if (changed) { const y = SCR[v] || 0; scrollTo(0, y); requestAnimationFrame(() => { if (VIEW === v) scrollTo(0, y); }); }   // مرة ثانية لأن رابط "#" يرجّع المتصفح للأعلى بعد الحدث
 }
 function renderView(){
   if (VIEW === "about") renderAbout();
   else if (VIEW === "work") renderWork();
   else if (VIEW === "contact") renderMap();
   else if (VIEW === "prefs") renderPrefs();
+  else if (VIEW === "studio") openStudio();
 }
+/* الأدوات (صمّم لوحتك + صورة الأسعار) بملف منفصل ينحمّل عند الحاجة بس */
+let TOOLS = null;
+function loadTools(){
+  if (!TOOLS) TOOLS = new Promise((ok, no) => { const s = document.createElement("script"); s.src = "tools.js?v=2"; s.onload = () => ok();
+    s.onerror = () => { TOOLS = null; s.remove(); no(); }; document.head.appendChild(s); });
+  return TOOLS;
+}
+function openStudio(){ loadTools().then(() => { if (VIEW === "studio") renderStudio(); }).catch(() => { $("#studio").innerHTML = `<p class="msg err" style="padding:30px 0;text-align:center">${t().noNet}</p>`; }); }
 function mapEmbed(){
   const q = (SHOP.mapQuery || "").trim(), addr = nm(SHOP.address);
   const m = q.match(/(-?\d{1,2}\.\d{3,})\s*,\s*(-?\d{1,3}\.\d{3,})/);
@@ -1374,7 +1410,7 @@ function renderMap(){
   const mp = $("#map"), key = query + "|" + open + "|" + L;
   if (mp.dataset.k !== key) { mp.dataset.k = key;
     mp.innerHTML = (query ? `<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="${esc(x.lt)}" src="https://maps.google.com/maps?q=${encodeURIComponent(query)}&z=16&hl=${L === "ku" ? "kmr" : "ar"}&output=embed"></iframe>` : "")
-      + (open ? `<a class="btn k" style="--k:var(--blue);--t:#fff" href="${esc(open)}" target="_blank" rel="noopener">${I.pin}<span>${x.openMap}</span></a>` : ""); }
+      + (open ? `<a class="btn k" style="--k:var(--blue-f);--t:#fff" href="${esc(open)}" target="_blank" rel="noopener">${I.pin}<span>${x.openMap}</span></a>` : ""); }
 }
 async function renderWork(){
   if (GAL === null) { GAL = []; const f = await fb();
@@ -1382,10 +1418,11 @@ async function renderWork(){
   const imgs = SHOP.gallery.concat(GAL.map(g => g.img)).map(g => typeof g === "string" ? { src: g } : g);
   const li = L === "ku" ? 1 : 0, x = t(), used = new Set();
   $("#workEmpty").hidden = !!imgs.length;
+  const cap = g => g.cap ? g.cap[li] : x.navWork;
   const med = (n, cls, d) => { const g = imgs[n]; if (!g) return ""; used.add(n); const ar = g.w ? ` style="aspect-ratio:${g.w}/${g.h}"` : "";
     return g.video
-      ? `<div class="xwm ${cls} rv" data-d="${d}"><video data-wkv src="${esc(g.video)}" poster="${esc(g.src)}" muted loop playsinline preload="none"${ar}></video></div>`
-      : `<button class="xwm ${cls} rv" data-d="${d}" data-wk="${n}" aria-label="${x.zoomImg || ""}"><img src="${esc(g.src)}" alt="" loading="lazy" decoding="async"${ar}></button>`; };
+      ? `<div class="xwm ${cls} rv" data-d="${d}"><video data-wkv src="${esc(g.video)}" poster="${esc(g.src)}" muted loop playsinline preload="none" aria-label="${esc(cap(g))}"${ar}></video></div>`
+      : `<button class="xwm ${cls} rv" data-d="${d}" data-wk="${n}" aria-label="${esc(x.zoomL + ": " + cap(g))}"><img src="${esc(g.src)}" alt="${esc(cap(g))}" loading="lazy" decoding="async"${ar}></button>`; };
   const txt = (sc, n) => `<div class="xwt"><b class="xwn num rv" data-d="up" aria-hidden="true">${String(n + 1).padStart(2, "0")}</b>` +
     `<p class="xwc rv" data-d="up" style="--i:1"><i aria-hidden="true"></i>${esc(sc.c[li])}</p><h2 class="rv" data-d="up" style="--i:2">${esc(sc.t[li])}</h2>` +
     `<ul class="xws rv" data-d="up" style="--i:3">${sc.s.map(v => `<li>${esc(v[li])}</li>`).join("")}</ul></div>`;
@@ -1396,11 +1433,11 @@ async function renderWork(){
       : med(sc.m[0], "xwf", sc.l === "wide" ? "zoom" : side);
     return `<section class="xw xw-${sc.l}${n % 2 ? " alt" : ""}" style="--k:var(--${sc.k})">${m}${txt(sc, n)}</section>`; }).join("");
   const rest = imgs.map((g, n) => n).filter(n => !used.has(n));
-  if (rest.length) html += `<div class="xwx">${rest.map(n => `<button class="xwm" data-wk="${n}"><img class="xwbl" src="${esc(imgs[n].src)}" alt="" aria-hidden="true" loading="lazy"><img src="${esc(imgs[n].src)}" alt="" loading="lazy"></button>`).join("")}</div>`;
-  html += `<section class="xwo"><h2 class="rv" data-d="up">${esc(SHOWO[li])}</h2><a class="btn wa rv" data-d="pop" target="_blank" rel="noopener" href="https://wa.me/${SHOP.whatsapp}">${x.wa}</a></section>`;
+  if (rest.length) html += `<div class="xwx">${rest.map(n => `<button class="xwm" data-wk="${n}" aria-label="${esc(x.zoomL + ": " + cap(imgs[n]))}"><img class="xwbl" src="${esc(imgs[n].src)}" alt="" aria-hidden="true" loading="lazy"><img src="${esc(imgs[n].src)}" alt="${esc(cap(imgs[n]))}" loading="lazy"></button>`).join("")}</div>`;
+  html += `<section class="xwo"><h2 class="rv" data-d="up">${esc(SHOWO[li])}</h2><a class="btn wa rv" data-d="pop" target="_blank" rel="noopener" href="${esc(waLink(x.projMsg))}">${I.wa}<span>${x.sendIdea}</span></a><a class="btn rv" data-d="pop" href="#studio">${I.spark}<span>${x.navStudio}</span></a></section>`;
   const gal = $("#gal"); gal.innerHTML = html;
   gal.onclick = e => { const b = e.target.closest("[data-wk]"); if (!b) return; const g = imgs[+b.dataset.wk];
-    openDlg("work", x.navWork); $("#db").innerHTML = `<img class="wkv" src="${esc(g.src)}" alt="">`; };
+    openDlg("work", cap(g)); $("#db").innerHTML = `<img class="wkv" src="${esc(g.src)}" alt="${esc(cap(g))}">`; };
   if (!("IntersectionObserver" in window) || RM) { gal.querySelectorAll(".rv").forEach(el => el.classList.add("in")); gal.querySelectorAll("video").forEach(v => v.controls = true); return; }
   const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } }), { threshold: .18 });
   gal.querySelectorAll(".rv").forEach(el => io.observe(el));
@@ -1410,18 +1447,18 @@ async function renderWork(){
 function renderPrefs(){
   const x = t(), th = document.documentElement.dataset.theme || "auto";
   const seg = (items, cur, attr) => `<div class="seg">${items.map(([v, l]) => `<button ${attr}="${v}" aria-pressed="${v === cur}">${l}</button>`).join("")}</div>`;
-  $("#prefs").innerHTML = `<div class="set">
-    <div><h3>${x.theme}</h3>${seg([["auto", x.auto], ["light", x.lightS], ["dark", x.darkS]], th, "data-th")}</div>
-    <div><h3>${x.lang}</h3>${seg([["ar", "عربي"], ["ku", "کوردی"]], L, "data-lg")}</div>
-    ${SHOP.rate > 0 ? `<div><h3>${x.curT}</h3>${seg([["usd", "$ " + x.usd], ["iqd", x.iqd]], CUR, "data-cu")}</div>` : ""}
-    <div><h3>${x.privacy}</h3><p class="hint" style="margin-bottom:10px">${x.privTxt}</p><button class="btn sm" id="wipe" style="width:100%">${x.clearData}</button></div>
+  $("#prefsBox").innerHTML = `<div class="set">
+    <div><h2>${x.theme}</h2>${seg([["auto", x.auto], ["light", x.lightS], ["dark", x.darkS]], th, "data-th")}</div>
+    <div><h2>${x.lang}</h2>${seg([["ar", "عربي"], ["ku", "کوردی"]], L, "data-lg")}</div>
+    ${SHOP.rate > 0 ? `<div><h2>${x.curT}</h2>${seg([["usd", "$ " + x.usd], ["iqd", x.iqd]], CUR, "data-cu")}</div>` : ""}
+    <div><h2>${x.privacy}</h2><p class="hint" style="margin-bottom:10px">${x.privTxt}</p><button class="btn sm" id="wipe" style="width:100%">${x.clearData}</button></div>
     ${FIREBASE.projectId ? `<button class="own" id="ownb">${x.ownerLogin}</button>` : ""}</div>`;
 }
-$("#prefs").onclick = e => { const b = e.target.closest("button"); if (!b) return;
+$("#prefsBox").onclick = e => { const b = e.target.closest("button"); if (!b) return;
   if (b.dataset.th) setTheme(b.dataset.th);
   else if (b.dataset.lg) { L = b.dataset.lg; store.set("lg", L); render(); }
   else if (b.dataset.cu) { CUR = b.dataset.cu; store.set("cur", CUR); render(); }
-  else if (b.id === "wipe") { ["cart","lg","th","cur","tip"].forEach(k => { try { localStorage.removeItem(k); } catch(e) {} });
+  else if (b.id === "wipe") { ["cart","lg","th","cur","tip","cnote","studio"].forEach(k => { try { localStorage.removeItem(k); } catch(e) {} }); CNOTE = "";
     CART = {}; L = "ar"; CUR = "usd"; delete document.documentElement.dataset.theme; render(); toast(t().cleared); }
   else if (b.id === "ownb") openOwner(); };
 
@@ -1435,7 +1472,8 @@ async function openOwner(){
   $("#db").onclick = null;
   $("#db").innerHTML = `<p class="hint">جارِ التحميل…</p>`; openDlg("owner", "لوحة المالك");
   const f = await fb();
-  if (!f) { $("#db").innerHTML = `<p class="msg err">وضع المالك غير مفعّل بعد.</p><p class="hint">لازم تنضبط إعدادات Firebase بأول الملف (FIREBASE).</p>`; return; }
+  if (!f) { $("#db").innerHTML = FIREBASE.projectId ? `<p class="msg err">${t().noNet}</p>`
+      : `<p class="msg err">وضع المالك غير مفعّل بعد.</p><p class="hint">لازم تنضبط إعدادات Firebase بأول الملف (FIREBASE).</p>`; return; }
   const u = f.auth.currentUser || await new Promise(r => { const un = f.A.onAuthStateChanged(f.auth, x => { un(); r(x); }); });
   u ? ownerPanel() : loginForm();
 }
@@ -1576,8 +1614,11 @@ $("#chips").onclick = e => { const b = e.target.closest(".chip"); if (!b) return
   b.scrollIntoView({ inline: "center", block: "nearest", behavior: RM ? "auto" : "smooth" });
   const g = $("#grid").getBoundingClientRect().top, lim = $("#appbar").offsetHeight + $("#tb").offsetHeight;
   if (g < lim) scrollTo({ top: g + scrollY - lim }); };
-$("#chips").addEventListener("scroll", e => { const c = e.target; $("#cw").classList.toggle("end", Math.abs(c.scrollLeft) + c.clientWidth >= c.scrollWidth - 4); }, { passive: true });
+function chipsEnd(){ const c = $("#chips"); $("#cw").classList.toggle("end", Math.abs(c.scrollLeft) + c.clientWidth >= c.scrollWidth - 4); }
+$("#chips").addEventListener("scroll", chipsEnd, { passive: true }); addEventListener("resize", chipsEnd);
 let qt; $("#q").addEventListener("input", e => { clearTimeout(qt); qt = setTimeout(() => { Q = e.target.value; renderGrid(); }, 120); });
+$("#q").addEventListener("keydown", e => { if (e.key === "Enter") e.target.blur(); });   // يسكّر الكيبورد بالموبايل
+$("#hact").onclick = e => { if (e.target.closest("#pib")) loadTools().then(() => priceImage()).catch(() => toast(t().noNet)); };
 $("#cur").onclick = e => { const b = e.target.closest("button"); if (!b) return; CUR = b.dataset.c; store.set("cur", CUR); render(); };
 $("#cbtn").onclick = () => { openDlg("cart", t().cart); renderCart(); };
 $("#x").onclick = () => dlg.close();
@@ -1597,7 +1638,7 @@ $("#dclose").onclick = $("#scrim").onclick = () => drawer(false);
 $("#dnav").onclick = e => { const a = e.target.closest("a"); if (!a) return; e.preventDefault();
   if (a.dataset.v === VIEW) return drawer(false);
   OV = ""; drawerUI(false); location.replace("#" + (a.dataset.v === "prices" ? "" : a.dataset.v)); };   // تستبدل خطوة القائمة بالصفحة الجديدة
-$("#brand").onclick = e => { if (VIEW === "prices") { e.preventDefault(); scrollTo({ top: 0, behavior: RM ? "auto" : "smooth" }); } };
+$("#brand").onclick = e => { SCR.prices = 0; if (VIEW === "prices") { e.preventDefault(); scrollTo({ top: 0, behavior: RM ? "auto" : "smooth" }); } };
 let footIn = false;
 function fabState(){ $("#fab").classList.toggle("off", footIn || cartCount() > 0 || VIEW !== "prices"); }
 if ("IntersectionObserver" in window) {

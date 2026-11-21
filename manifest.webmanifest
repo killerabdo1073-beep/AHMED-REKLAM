@@ -1,0 +1,17 @@
+{
+  "name": "Ahmed Reklam | قائمة الأسعار",
+  "short_name": "Ahmed Reklam",
+  "description": "قائمة أسعار مواد الطباعة والإعلان والطلب عبر واتساب",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#E6EAE7",
+  "theme_color": "#FBFCFB",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
